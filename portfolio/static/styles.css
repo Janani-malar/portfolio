@@ -1,0 +1,225 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f0f8ff;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color:#ff5722;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:  #f0f8ff;
+    color: #333;
+    padding-top: 70px; /* Adjust to match actual navbar height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #007bff ,  #ff5722);
+    color: white;
+    padding: 30px 15px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+.row.align-items-center{
+    padding-top: 60px;
+    margin-top: 0;    
+}
+
+.about {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 15px;
+    text-align: center;
+    background: #fff;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.btn {    /* Global Reset for All Buttons */
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 50px 15px;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button {
+    background:  #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background:  #ff5722;
+}
+
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}    
+<div class="contact-container">
+    <h1>Contact Me</h1>
+    <p class="contact-description">Feel free to reach out — I’d love to hear from you!</p>
+
+    <div class="contact-info">
+        <div class="contact-item"><strong>Email:</strong> <a href="mailto:jananimalarsoul@gmail.com">jananimalarsoul@gmail.com</a></div>
+        <div class="contact-item"><strong>Phone:</strong> 8939197560</div>
+        <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/janani-malar" target="_blank">linkedin.com/in/janani-malar</a></div>
+        <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></div>
+    </div>
+
+    <h2>Send a Message</h2>
+    <form class="contact-form" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+{% endblock %}
